@@ -1,0 +1,8 @@
+*.pyc
+*.conf
+*.cfg
+*.log
+*.txt
+env
+env3
+.idea
