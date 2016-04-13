@@ -19,5 +19,5 @@ source env/bin/activate
 pip install godaddypy
 ```
 
-You can add running command of the script into file `/etc/rc.local` for auto starging after rebooting.
+You can add running command of the script into file `/etc/rc.local` for auto starting after rebooting.
 
