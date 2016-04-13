@@ -8,7 +8,7 @@ This script allow you to update actual IP address of AWS instance in A record su
 
 GoDaddyPy library works only with Python v. 2.7.
 
-We recommend use virtualenv.
+We recommend to use virtualenv.
 
 CentOS-like distro:
 
@@ -19,5 +19,5 @@ source env/bin/activate
 pip install godaddypy
 ```
 
-You can add running command of the script into file `/etc/rc.local` for updating A record after rebooting.
+You can add running command of the script into file `/etc/rc.local` for auto starging after rebooting.
 
