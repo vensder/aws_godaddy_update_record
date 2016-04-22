@@ -17,7 +17,7 @@ cd aws_godaddy_update_record
 ```
 
 Make virtual environment for python 2.7 version.
-For example, do this in CentOS-like distros:
+For example, do this on CentOS-like distros:
 
 ```
 sudo yum install python27-virtualenv.noarch
