@@ -17,6 +17,13 @@ which python >> logfile.log
 python aws_godaddy_record_update.py >> logfile.log
 deactivate
 
-# echo "/bin/bash $WORK_DIR/update_ip.sh" > /etc/rc.local
+# For autostart after reboting just add this script into /etc/rc.local
+
+# echo '#!/bin/sh' > /etc/rc.local
+# echo "/bin/bash $WORK_DIR/update_ip.sh" >> /etc/rc.local
+
+# On CentOS-like systems:
 # echo 'touch /var/lock/subsys/local' >> /etc/rc.local
 
+# On Ubuntu-like systems:
+# echo 'exit 0' >> /etc/rc.local
