@@ -4,8 +4,8 @@
 # update godaddy dns record after aws instance rebooting
 # sudo yum install python27-virtualenv.noarch
 
-WORK_DIR="$HOME/aws_godaddy_update_record"
-mkdir -p $WORK_DIR 
+WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 cd $WORK_DIR
 
 # virtualenv env
