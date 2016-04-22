@@ -4,7 +4,7 @@
 # update godaddy dns record after aws instance rebooting
 # sudo yum install python27-virtualenv.noarch
 
-WORK_DIR='/home/ec2-user/python'
+WORK_DIR="$HOME/aws_godaddy_update_record"
 mkdir -p $WORK_DIR 
 cd $WORK_DIR
 
@@ -17,6 +17,6 @@ which python >> logfile.log
 python aws_godaddy_record_update.py >> logfile.log
 deactivate
 
-# echo '/bin/bash /home/ec2-user/python/update_ip.sh' > /etc/rc.local
+# echo "/bin/bash $WORK_DIR/update_ip.sh" > /etc/rc.local
 # echo 'touch /var/lock/subsys/local' >> /etc/rc.local
 
