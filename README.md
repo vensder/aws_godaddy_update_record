@@ -10,10 +10,24 @@ GoDaddyPy library works only with Python v. 2.7.
 
 We recommend to use virtualenv.
 
+Make clone of repo and change dir:
+```
+git clone https://github.com/vensder/aws_godaddy_update_record.git
+cd aws_godaddy_update_record
+```
+
+Make virtual environment for python 2.7 version.
 For example, do this in CentOS-like distros:
 
-```bash
+```
 sudo yum install python27-virtualenv.noarch
+virtualenv env
+source env/bin/activate
+pip install godaddypy
+```
+Or for Ubuntu-like distros:
+```
+sudo apt-get install virtualenv
 virtualenv env
 source env/bin/activate
 pip install godaddypy
