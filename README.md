@@ -43,7 +43,7 @@ This is example of the `/etc/rc.local` file:
 # You can put your own initialization stuff in here if you don't
 # want to do the full Sys V style init stuff.
 
-/bin/bash /home/ec2-user/python/update_ip.sh
+/bin/bash /home/ec2-user/aws_godaddy_update_record/update_ip.sh
 
 touch /var/lock/subsys/local
 ```
