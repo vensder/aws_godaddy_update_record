@@ -4,12 +4,10 @@
 # update godaddy dns record after aws instance rebooting
 # sudo yum install python27-virtualenv.noarch
 
-WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-cd $WORK_DIR
+cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 # virtualenv env
-source $WORK_DIR/env/bin/activate
+source env/bin/activate
 
 date +%F-%R >> logfile.log
 which python >> logfile.log
